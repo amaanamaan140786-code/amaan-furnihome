@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Collection | Amaan Furni&Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Amaan Furni&Home</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#collections">Collections</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="collection-page">
+        <h1>TABLE COLLECTION</h1>
+        <p>Explore our stylish table designs.</p>
+
+        <div class="product-grid">
+
+            <div class="product">
+                <img src="images/table1.jpg" alt="Table Design 01" onclick="openImage(this.src)">
+                <h3>TABLE DESIGN 01</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/table2.jpg" alt="Table Design 02" onclick="openImage(this.src)">
+                <h3>TABLE DESIGN 02</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/table3.jpg" alt="Table Design 03" onclick="openImage(this.src)">
+                <h3>TABLE DESIGN 03</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/table4.jpg" alt="Table Design 04" onclick="openImage(this.src)">
+                <h3>TABLE DESIGN 04</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/table5.jpg" alt="Table Design 05" onclick="openImage(this.src)">
+                <h3>TABLE DESIGN 05</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/table6.jpg" alt="Table Design 06" onclick="openImage(this.src)">
+                <h3>TABLE DESIGN 06</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/table7.jpg" alt="Table Design 07" onclick="openImage(this.src)">
+                <h3>TABLE DESIGN 07</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/table8.jpg" alt="Table Design 08" onclick="openImage(this.src)">
+                <h3>TABLE DESIGN 08</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/table9.jpg" alt="Table Design 09" onclick="openImage(this.src)">
+                <h3>TABLE DESIGN 09</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/table10.jpg" alt="Table Design 10" onclick="openImage(this.src)">
+                <h3>TABLE DESIGN 10</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/table11.jpg" alt="Table Design 11" onclick="openImage(this.src)">
+                <h3>TABLE DESIGN 11</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/table12.jpg" alt="Table Design 12" onclick="openImage(this.src)">
+                <h3>TABLE DESIGN 12</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/table13.jpg" alt="Table Design 13" onclick="openImage(this.src)">
+                <h3>TABLE DESIGN 13</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/table14.jpg" alt="Table Design 14" onclick="openImage(this.src)">
+                <h3>TABLE DESIGN 14</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/table15.jpg" alt="Table Design 15" onclick="openImage(this.src)">
+                <h3>TABLE DESIGN 15</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/table16.jpg" alt="Table Design 16" onclick="openImage(this.src)">
+                <h3>TABLE DESIGN 16</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/table17.jpg" alt="Table Design 17" onclick="openImage(this.src)">
+                <h3>TABLE DESIGN 17</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/table18.jpg" alt="Table Design 18" onclick="openImage(this.src)">
+                <h3>TABLE DESIGN 18</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/table19.jpg" alt="Table Design 19" onclick="openImage(this.src)">
+                <h3>TABLE DESIGN 19</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Interested in a Design?</h2>
+        <p>Contact us for more information.</p>
+        <button
+            onclick="window.open('https://wa.me/919837658893?text=Hello%20Amaan%20Furni%26Home,%20I%20am%20interested%20in%20your%20table%20design.', '_blank')">
+            WhatsApp Us
+        </button>
+    </section>
+
+    <footer>
+        <p>© 2026 Amaan Furni&Home</p>
+    </footer>
+    <div id="imageModal" class="image-modal">
+        <span class="close-image" onclick="closeImage()">&times;</span>
+        <img id="largeImage" src="" alt="Large Design">
+    </div>
+
+    <script>
+        function openImage(src) {
+            document.getElementById("largeImage").src = src;
+            document.getElementById("imageModal").style.display = "flex";
+        }
+
+        function closeImage() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+
+        document.getElementById("imageModal").addEventListener("click", function (e) {
+            if (e.target === this) {
+                closeImage();
+            }
+        });
+    </script>
+    <a href="https://wa.me/919837658893?text=Hello%20Amaan%20Furni%26Home,%20I%20am%20interested%20in%20your%20design."
+        class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+        WhatsApp
+    </a>
+    <button id="backToTop" onclick="scrollToTop()">↑</button>
+
+    <script>
+        window.onscroll = function () {
+            if (document.documentElement.scrollTop > 300) {
+                document.getElementById("backToTop").style.display = "block";
+            } else {
+                document.getElementById("backToTop").style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
+</body>
+
+</html>

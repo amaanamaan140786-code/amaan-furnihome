@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Unit Collection | Amaan Furni&Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Amaan Furni&Home</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#collections">Collections</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="collection-page">
+        <h1>STUDY UNIT COLLECTION</h1>
+        <p>Explore our modern study unit designs.</p>
+
+        <div class="product-grid">
+
+            <div class="product">
+                <img src="images/study1.jpg" alt="Study Unit Design 01" onclick="openImage(this.src)">
+                <h3>STUDY UNIT DESIGN 01</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/study2.jpg" alt="Study Unit Design 02" onclick="openImage(this.src)">
+                <h3>STUDY UNIT DESIGN 02</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/study3.jpg" alt="Study Unit Design 03" onclick="openImage(this.src)">
+                <h3>STUDY UNIT DESIGN 03</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/study4.jpg" alt="Study Unit Design 04" onclick="openImage(this.src)">
+                <h3>STUDY UNIT DESIGN 04</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/study5.jpg" alt="Study Unit Design 05" onclick="openImage(this.src)">
+                <h3>STUDY UNIT DESIGN 05</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/study6.jpg" alt="Study Unit Design 06" onclick="openImage(this.src)">
+                <h3>STUDY UNIT DESIGN 06</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/study7.jpg" alt="Study Unit Design 07" onclick="openImage(this.src)">
+                <h3>STUDY UNIT DESIGN 07</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/study8.jpg" alt="Study Unit Design 08" onclick="openImage(this.src)">
+                <h3>STUDY UNIT DESIGN 08</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/study9.jpg" alt="Study Unit Design 09" onclick="openImage(this.src)">
+                <h3>STUDY UNIT DESIGN 09</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/study10.jpg" alt="Study Unit Design 10" onclick="openImage(this.src)">
+                <h3>STUDY UNIT DESIGN 10</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/study11.jpg" alt="Study Unit Design 11" onclick="openImage(this.src)">
+                <h3>STUDY UNIT DESIGN 11</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/study12.jpg" alt="Study Unit Design 12" onclick="openImage(this.src)">
+                <h3>STUDY UNIT DESIGN 12</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/study13.jpg" alt="Study Unit Design 13" onclick="openImage(this.src)">
+                <h3>STUDY UNIT DESIGN 13</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/study14.jpg" alt="Study Unit Design 14" onclick="openImage(this.src)">
+                <h3>STUDY UNIT DESIGN 14</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/study15.jpg" alt="Study Unit Design 15" onclick="openImage(this.src)">
+                <h3>STUDY UNIT DESIGN 15</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/study16.jpg" alt="Study Unit Design 16" onclick="openImage(this.src)">
+                <h3>STUDY UNIT DESIGN 16</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/study17.jpg" alt="Study Unit Design 17" onclick="openImage(this.src)">
+                <h3>STUDY UNIT DESIGN 17</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/study18.jpg" alt="Study Unit Design 18" onclick="openImage(this.src)">
+                <h3>STUDY UNIT DESIGN 18</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/study19.jpg" alt="Study Unit Design 19" onclick="openImage(this.src)">
+                <h3>STUDY UNIT DESIGN 19</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/study20.jpg" alt="Study Unit Design 20" onclick="openImage(this.src)">
+                <h3>STUDY UNIT DESIGN 20</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/study21.jpg" alt="Study Unit Design 21" onclick="openImage(this.src)">
+                <h3>STUDY UNIT DESIGN 21</h3>
+            </div>
+
+            <div class="product">
+                <img src="images/study22.jpg" alt="Study Unit Design 22" onclick="openImage(this.src)">
+                <h3>STUDY UNIT DESIGN 22</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Interested in a Design?</h2>
+        <p>Contact us for more information.</p>
+        <button
+            onclick="window.open('https://wa.me/919837658893?text=Hello%20Amaan%20Furni%26Home,%20I%20am%20interested%20in%20your%20study%20unit%20design.', '_blank')">
+            WhatsApp Us
+        </button>
+    </section>
+
+    <footer>
+        <p>© 2026 Amaan Furni&Home</p>
+    </footer>
+    <div id="imageModal" class="image-modal">
+        <span class="close-image" onclick="closeImage()">&times;</span>
+        <img id="largeImage" src="" alt="Large Design">
+    </div>
+
+    <script>
+        function openImage(src) {
+            document.getElementById("largeImage").src = src;
+            document.getElementById("imageModal").style.display = "flex";
+        }
+
+        function closeImage() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+
+        document.getElementById("imageModal").addEventListener("click", function (e) {
+            if (e.target === this) {
+                closeImage();
+            }
+        });
+    </script>
+    <a href="https://wa.me/919837658893?text=Hello%20Amaan%20Furni%26Home,%20I%20am%20interested%20in%20your%20design."
+        class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+        WhatsApp
+    </a>
+    <button id="backToTop" onclick="scrollToTop()">↑</button>
+
+    <script>
+        window.onscroll = function () {
+            if (document.documentElement.scrollTop > 300) {
+                document.getElementById("backToTop").style.display = "block";
+            } else {
+                document.getElementById("backToTop").style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
+</body>
+
+</html>
